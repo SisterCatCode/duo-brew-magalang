@@ -1,0 +1,573 @@
+<!DOCTYPE html>
+<html lang="en" >
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Duo Brew</title>
+    <link rel="shortcut icon" href="images/duo logo.png" type="image/x-icon">
+
+    <!-- Google Fonts -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Playfair+Display:wght@400;700&family=Poppins:wght@300;400;600;700&family=Dancing+Script:wght@700&display=swap" rel="stylesheet">
+
+    <!-- Font Awesome -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+
+    <!-- Animate.css -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.1.1/animate.min.css"/>
+
+    <!-- External CSS -->
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <!-- Navigation -->
+    <nav id="navbar">
+        <div class="logo">
+            <img src="images/duo logo.png" alt="">
+        </div>
+
+        <ul id="nav-menu" role="menubar" aria-hidden="true">
+            <li role="none"><a href="#home" class="active" role="menuitem">Home</a></li>
+            <li role="none"><a href="#menu" role="menuitem">Menu</a></li>
+            <li role="none"><a href="#about" role="menuitem">About</a></li>
+            <li role="none"><a href="#gallery" role="menuitem">Gallery</a></li>
+            <li role="none"><a href="#testimonials" role="menuitem">Testimonials</a></li>
+            <li role="none"><a href="#contact" role="menuitem">Contacts</a></li>
+        </ul>
+
+        <button class="menu-toggle" id="menu-toggle" aria-label="Toggle navigation menu" aria-controls="nav-menu" aria-expanded="false">
+            <i class="fas fa-bars"></i>
+        </button>
+    </nav>
+
+    <!-- Hero Section -->
+    <section class="hero" id="home">
+        <div class="coffee-beans" id="coffee-beans"></div>                 
+        <div class="coffee-steam">
+            <div class="steam"></div>
+            <div class="steam"></div>
+            <div class="steam"></div>
+        </div>
+
+        <div class="hero-content">
+            <h1 class="animate__animated animate__fadeInDown">Milktea and Coffee for Everyone</h1>
+            <p class="animate__animated animate__fadeIn animate__delay-1s">Affordable coffee and milk tea that hit the spot without hitting your wallet.</p>
+            <div class="buttons">
+                <a href="#menu" class="btn btn-primary animate__animated animate__fadeInUp animate__delay-2s">Explore Menu</a>
+            </div>
+        </div>
+
+        <div class="hero-image animate__animated animate__fadeIn animate__delay-1s">
+            <!-- Note: Consider optimizing this image further or using a more relevant one -->
+            <img src="images/download__1_-removebg-preview.png" alt="">
+        </div>
+    </section>
+
+    <!-- Menu Section -->
+    <section class="section menu" id="menu">
+        <div class="section-title">
+            <h2>Our Exclusive Blends</h2>
+            <p>Each sip is a tale of love, competence, and finest ingredients from across the world.</p>
+        </div>
+        <div class="menu-container">
+             <!-- Milktea -->
+            <div class="menu-category">
+                <img src="menu/milktea cookies and cream.jpg" alt="" loading="lazy">
+                <div class="menu-description">
+                    <h3>Cookies and Cream</h3>
+                    <p>Classic cookie goodness meets creamy milk tea—rich, chocolatey, and perfectly sweet for your cravings.</p>
+                    <div class="menu-price">
+                        <span class="type">Milktea</span>
+                        <span class="price">20, 30, 40</span>
+                    </div>
+                </div>
+            </div>
+
+            <div class="menu-category">
+                <img src="menu/milktea choco.jpg" alt="" loading="">
+                <div class="menu-description">
+                    <h3>Chocolate</h3>
+                    <p>A rich and velvety blend of cocoa and milk tea—perfectly sweet and indulgent, like your favorite chocolate treat in a cup.</p>
+                    <div class="menu-price">
+                        <span class="type">Milktea</span>
+                        <span class="price">20, 30, 40</span>
+                    </div>
+                </div>
+            </div>
+
+            <div class="menu-category">
+                <img src="menu/milktea match.jpg" alt="" loading="lazy">
+                <div class="menu-description">
+                    <h3>Matcha</h3>
+                    <p>Made with premium green tea powder, this blend is smooth, slightly sweet, and full of natural matcha flavor.</p>
+                    <div class="menu-price">
+                        <span class="type">Milktea</span>
+                        <span class="price">20, 30, 40</span>
+                    </div>
+                </div>
+            </div>
+
+            <div class="menu-category">
+                <img src="menu/milktea vanilla.jpg" alt="" loading="lazy">
+                <div class="menu-description">
+                    <h3>Vanilla</h3>
+                    <p>Vanilla milk tea is a sweet, creamy beverage that combines the flavors of tea, milk, and vanilla.
+                         It's often served cold with or without tapioca pearls (boba). </p>
+                    <div class="menu-price">
+                        <span class="type">Milktea</span>
+                        <span class="price">20, 30, 40</span>
+                    </div>
+                </div>
+            </div>
+            <!-- Iced Coffee -->
+            <div class="menu-category">
+                <img src="menu/iced coffee americano.jpg" alt="" loading="lazy">
+                <div class="menu-description">
+                    <h3>Iced Americano</h3>
+                    <p>A refreshing coffee made with rich espresso, cold water, and ice. Smooth, bold, and perfect for a cool caffeine boost.</p>
+                    <div class="menu-price">
+                        <span class="type">Iced Coffee</span>
+                        <span class="price">30, 40, 50</span>
+                    </div>
+                </div>
+            </div>
+
+            <div class="menu-category">
+                <img src="menu/iced coffee caramel macchiato.jpg" alt="" loading="">
+                <div class="menu-description">
+                    <h3>Caramel Macchiato</h3>
+                    <p>Layers of creamy milk, bold espresso, and sweet caramel drizzle — a classic favorite served cold and delicious!</p>
+                    <div class="menu-price">
+                        <span class="type">Iced Coffee</span>
+                        <span class="price">30, 40, 50</span>
+                    </div>
+                </div>
+            </div>
+
+            <div class="menu-category">
+                <img src="menu/iced coffee dark choco.jpg" alt="" loading="lazy">
+                <div class="menu-description">
+                    <h3>Dark Chocolate</h3>
+                    <p>Rich and bold, this iced coffee blends the deep flavor of dark chocolate with smooth espresso for a satisfying and energizing treat.</p>
+                    <div class="menu-price">
+                        <span class="type">Iced Coffee</span>
+                        <span class="price">30, 40, 50</span>
+                    </div>
+                </div>
+            </div>
+
+            <div class="menu-category">
+                <img src="menu/iced coffee french vanilla.jpg" alt="" loading="lazy">
+                <div class="menu-description">
+                    <h3>French Vanilla</h3>
+                    <p>Smooth, creamy, and slightly sweet — this iced coffee combines the classic taste of French vanilla with refreshing cold brew for a comforting twist.</p>
+                    <div class="menu-price">
+                        <span class="type">Iced Coffee</span>
+                        <span class="price">30, 40, 50</span>
+                    </div>
+                </div>
+            </div>
+            <!-- frappe -->
+            <div class="menu-category">
+                <img src="menu/frappe strawberry.jpg" alt="" loading="lazy">
+                <div class="menu-description">
+                    <h3>Strawberry</h3>
+                    <p>A refreshing and creamy blend bursting with real strawberry flavor—sweet, fruity, and perfect for any mood!</p>
+                    <div class="menu-price">
+                        <span class="type">Frappe</span>
+                        <span class="price">60, 75, 85</span>
+                    </div>
+                </div>
+            </div>
+
+            <div class="menu-category">
+                <img src="menu/frappe cheescake.jpg" alt="" loading="lazy">
+                <div class="menu-description">
+                    <h3>Cheesecake</h3>
+                    <p>Smooth, rich, and indulgent—this frappe tastes just like a slice of your favorite cheesecake, blended to perfection!</p>
+                    <div class="menu-price">
+                        <span class="type">Frappe</span>
+                        <span class="price">60, 75, 85</span>
+                    </div>
+                </div>
+            </div>
+
+            <div class="menu-category">
+                <img src="menu/frappe chocolate.jpg" alt="" loading="lazy">
+                <div class="menu-description">
+                    <h3>Chocolate </h3>
+                    <p>A chocolate frappe is a cold, blended beverage typically made with chocolate, milk, ice, and sometimes coffee or ice cream.</p>
+                    <div class="menu-price">
+                        <span class="type">Frappe</span>
+                        <span class="price">60, 75, 85</span>
+                    </div>
+                </div>
+            </div>
+            
+            <div class="menu-category">
+                <img src="menu/frappe mango graham.jpg" alt="" loading="lazy">
+                <div class="menu-description">
+                    <h3>Mango Graham </h3>
+                    <p>A tropical twist featuring ripe mangoes and crushed grahams for a rich, fruity, and refreshingly indulgent frappe experience.</p>
+                    <div class="menu-price">
+                        <span class="type">Frappe</span>
+                        <span class="price">60, 75, 85</span>
+                    </div>
+                </div>
+            </div>
+        
+            <!-- fruit tea -->
+            <div class="menu-category">
+                <img src="menu/fruit tea mango.jpg" alt="" loading="lazy">
+                <div class="menu-description">
+                    <h3>Mango</h3>
+                    <p>Mango fruit tea is a refreshing, tropical drink made with tea and sweet mango flavor, 
+                        often served cold with ice and optional fruit or boba toppings.</p>
+                    <div class="menu-price">
+                        <span class="type">Fruit Tea</span>
+                        <span class="price">20, 35, 45</span>
+                    </div>
+                </div>
+            </div>
+
+            <div class="menu-category">
+                <img src="menu/fruit tea green apple.jpg" alt="" loading="lazy">
+                <div class="menu-description">
+                    <h3>Green Apple</h3>
+                    <p>Enjoy the cool and tangy taste of green apple in a refreshing tea that’s perfect for quenching your thirst and lifting your mood.</p>
+                    <div class="menu-price">
+                        <span class="type">Fruit Tea</span>
+                        <span class="price">20, 35, 45</span>
+                    </div>
+                </div>
+            </div>
+
+            <div class="menu-category">
+                <img src="menu/fruit tea strawberry.jpg" alt="" loading="lazy">
+                <div class="menu-description">
+                    <h3>Strawberry </h3>
+                    <p>A fruity and fragrant tea with the natural sweetness of ripe strawberries — a light and delicious pick-me-up.</p>
+                    <div class="menu-price">
+                        <span class="type">Fruit Tea</span>
+                        <span class="price">20, 35, 45</span>
+                    </div>
+                </div>
+            </div>
+
+            <div class="menu-category">
+                <img src="menu/fruit lychee.jpg" alt="" loading="lazy">
+                <div class="menu-description">
+                    <h3>Grape</h3>
+                    <p>Enjoy the cool and tangy taste of green apple in a refreshing tea that’s perfect for quenching your thirst and lifting your mood.</p>
+                    <div class="menu-price">
+                        <span class="type">Fruit Tea</span>
+                        <span class="price">20, 35, 45</span>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- About Section -->
+    <section class="section about" id="about">
+        <div class="section-title">
+            <h2>Our Coffee and Milktea Journey</h2>
+            <p>From bean to cup, we're dedicated to crafting exceptional coffee experiences.</p>
+        </div>
+
+        <div class="about-content">
+            <div class="about-image">
+                <img src="images/abouuuut.jpg" loading="lazy">
+            </div>
+
+            <div class="about-text">
+                <h2>Brewing Excellence Since 2024</h2>
+                <p>Our business operates under a franchise model. I initially discovered it through advertisements on Facebook, which sparked my interest. 
+                    After attending their online orientation, I was impressed by the concept and shared it with my spouse. We both saw its potential and decided to proceed with franchising. 
+                    We officially acquired the franchise in October and successfully opened our business on November 11, 2024.</p>
+
+                <div class="about-highlight">
+                    <p>"Coffee is more than just a beverage its abridge that connect people, cultures, and cherished with the moments. We take pride in being part of your daily routine"</p>
+                </div>
+
+                <div class="social-icons">
+                    <a href="#" aria-label="Instagram"><i class="fab fa-instagram"></i></a>
+                    <a href="https://www.facebook.com/profile.php?id=61565977657923" aria-label="Facebook"><i class="fab fa-facebook-f"></i></a>
+                    <a href="#" aria-label="Twitter"><i class="fab fa-twitter"></i></a>
+                    <a href="#" aria-label="TikTok"><i class="fab fa-tiktok"></i></a>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Gallery Section -->
+    <section class="section gallery" id="gallery">
+        <div class="section-title">
+            <h2>Gallery</h2>
+        </div>
+      <div class="gallery-container">
+        <button class="nav-btn prev-btn">&#10094;</button>
+        <div class="carousel" id="carousel">
+          <figure>
+            <img src="gallery/img1.jpg" alt="Image 1">
+          </figure>
+          <figure>
+            <img src="gallery/img2.jpg" alt="Image 2">
+          </figure>
+          <figure>
+            <img src="gallery/img3.jpg" alt="Image 3">
+          </figure>
+          <figure>
+            <img src="gallery/img8.jpg" alt="Image 4">
+          </figure>
+          <figure>
+            <img src="gallery/img4.jpg" alt="Image 5">
+          </figure>
+          <figure>
+            <img src="gallery/img5.jpg" alt="Image 6">
+          </figure>
+          <figure>
+            <img src="gallery/img7.jpg" alt="Image 7">
+          </figure>
+          <figure>
+            <img src="gallery/img6.jpg" alt="Image 8">
+          </figure>
+        </div>
+        <button class="nav-btn next-btn">&#10095;</button>
+      </div>
+      </section>
+
+    <!-- Testimonials Section -->
+    <section class="section testimonials" id="testimonials">
+        <div class="section-title">
+            <h2>What Our Customers Say</h2>
+            <p>Hear from our community of milktea lovers about their Duo Brew experiences.</p>
+        </div>
+
+        <div class="testimonial-container">
+            <div class="testimonial">
+                <div class="testimonial-content">
+                    <p>Hands down the best coffee in town! They nail it every time with the little details. I’m there every day and it’s always spot on.</p>
+                </div>
+                <div class="testimonial-author">
+                    <div class="author-img">
+                        <img src="author img/dangs.jpg" alt="" loading="lazy">
+                    </div>
+                    <div class="author-info">
+                        <h4>Rachelle D.</h4>
+                        <p>Regular Customer</p>
+                        <div class="rating" aria-label="Rating: 5 out of 5 stars">
+                            <i class="fas fa-star"></i><i class="fas fa-star"></i><i class="fas fa-star"></i><i class="fas fa-star"></i><i class="fas fa-star"></i>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <div class="testimonial">
+                <div class="testimonial-content">
+                    <p>This place is my go-to for milk tea! Super affordable without skimping on flavor. The drinks are always refreshing, and the price makes it easy to treat myself anytime.</p>
+                </div>
+                <div class="testimonial-author">
+                    <div class="author-img">
+                        <img src="author img/download.png" alt="" loading="lazy">
+                    </div>
+                    <div class="author-info">
+                        <h4>Franchesca M.</h4>
+                        <p>Student</p>
+                        <div class="rating" aria-label="Rating: 4.5 out of 5 stars">
+                            <i class="fas fa-star"></i><i class="fas fa-star"></i><i class="fas fa-star"></i><i class="fas fa-star"></i><i class="fas fa-star-half-alt"></i>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <div class="testimonial">
+                <div class="testimonial-content">
+                    <p>Tried this milk tea shop for the first time and was seriously impressed! The drink was delicious and way more affordable than I expected. Definitely coming back for more.</p>
+                </div>
+                <div class="testimonial-author">
+                    <div class="author-img">
+                        <img src="author img/lezaree.jpg" alt="" loading="lazy">
+                    </div>
+                    <div class="author-info">
+                        <h4>Lezaree H.</h4>
+                        <p>Student</p>
+                        <div class="rating" aria-label="Rating: 5 out of 5 stars">
+                            <i class="fas fa-star"></i><i class="fas fa-star"></i><i class="fas fa-star"></i><i class="fas fa-star"></i><i class="fas fa-star"></i>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Contact Section -->
+    <section class="section contact" id="contact">
+        <div class="section-title">
+            <h2>Visit Us</h2>
+            <p>We'd love to hear from you. Stop by our shop or get in touch.</p>
+        </div>
+
+        <div class="contact-container">
+            <div class="contact-info">
+                <h3>Contact Information</h3>
+
+                <div class="contact-details">
+                    <div class="contact-item">
+                        <div class="contact-icon"><i class="fas fa-map-marker-alt"></i></div>
+                        <div class="contact-text">
+                            <h4>Location</h4>
+                            <p>129 Purok 1 San Pablo, Magalang, Pampanga, Philippines</p>
+                        </div>
+                    </div>
+
+                    <div class="contact-item">
+                        <div class="contact-icon"><i class="fas fa-phone-alt"></i></div>
+                        <div class="contact-text">
+                            <h4>Phone</h4>
+                            <p><a href="tel:+15035550198" style="color: inherit; text-decoration: none;">0949 366 1599</a></p>
+                        </div>
+                    </div>
+
+                    <div class="contact-item">
+                        <div class="contact-icon"><i class="fas fa-envelope"></i></div>
+                        <div class="contact-text">
+                            <h4>Email</h4>
+                            <p><a href="mailto:hello@brewhaven.com" style="color: inherit; text-decoration: none;">duobrew.magalang@gmail.com</a></p>
+                        </div>
+                    </div>
+
+                    <div class="contact-item">
+                        <div class="contact-icon"><i class="fas fa-clock"></i></div>
+                        <div class="contact-text">
+                            <h4>Hours</h4>
+                            <p>Sunday - Thursday: 10:00 AM - 7:00 PM<br>
+                            Friday - Saturday: 10:00 AM - 10:00 PM</p>
+                        </div>
+                    </div>
+                </div>
+
+                <h3>Follow Us</h3>
+                <div class="social-icons">
+                    <a href="#" aria-label="Instagram"><i class="fab fa-instagram"></i></a>
+                    <a href="#" aria-label="Facebook"><i class="fab fa-facebook-f"></i></a>
+                    <a href="#" aria-label="Twitter"><i class="fab fa-twitter"></i></a>
+                    <a href="#" aria-label="TikTok"><i class="fab fa-tiktok"></i></a>
+                </div>
+            </div>
+
+            <div class="contact-form">
+                <h3>Send Us a Message</h3>
+                <form id="contactForm">
+                    <div class="form-group">
+                        <label for="name">Your Name</label>
+                        <input type="text" id="name" name="name" class="form-control" required autocomplete="name">
+                    </div>
+
+                    <div class="form-group">
+                        <label for="email">Email Address</label>
+                        <input type="email" id="email" name="email" class="form-control" required autocomplete="email">
+                    </div>
+
+                    <div class="form-group">
+                        <label for="subject">Subject</label>
+                        <input type="text" id="subject" name="subject" class="form-control" required>
+                    </div>
+
+                    <div class="form-group">
+                        <label for="message">Message</label>
+                        <textarea id="message" name="message" class="form-control" required></textarea>
+                    </div>
+
+                    <button type="submit" class="submit-btn">Send Message</button>
+                    <div id="form-feedback" class="form-feedback" aria-live="polite"></div>
+                </form>
+            </div>
+        </div>
+    </section>
+
+    <!-- Footer -->
+    <footer>
+        <div class="footer-container">
+            <div class="footer-col">
+                <h3>About Duo Brew</h3>
+                <p>Expert coffee roasters committed to quality, sustainability, 
+                    and fostering meaningful connections through extraordinary coffee experiences.</p>
+                <div class="footer-social">
+                    <a href="#" aria-label="Instagram"><i class="fab fa-instagram"></i></a>
+                    <a href="https://www.facebook.com/profile.php?id=61565977657923" aria-label="Facebook"><i class="fab fa-facebook-f"></i></a>
+                    <a href="#" aria-label="Twitter"><i class="fab fa-twitter"></i></a>
+                    <a href="#" aria-label="TikTok"><i class="fab fa-tiktok"></i></a>
+                </div>
+            </div>
+
+            <div class="footer-col">
+                <h3>Quick Links</h3>
+                <ul class="footer-links">
+                    <li><a href="#home">Home</a></li>
+                    <li><a href="#menu">Menu</a></li>
+                    <li><a href="#gallery">Gallery</a></li>
+                    <li><a href="#about">Our Story</a></li>
+                    <li><a href="#testimonials">Testimonials</a></li>
+                    <li><a href="#contact">Contact</a></li>
+                    <!-- Consider adding Privacy Policy, Terms of Service links here -->
+                </ul>
+            </div>
+
+            <div class="footer-col">
+                <h3>Opening Hours</h3>
+                <ul class="opening-hours">
+                    <li><span>Sunday - Thursday</span> <span>10:00 AM - 7:00 PM</span></li>
+                    <li><span>Friday - Saturday</span> <span>10:00 AM - 10:00 PM</span></li>
+                    <li><span>Holidays</span> <span>8:00 AM - 6:00 PM</span></li>
+                </ul>
+            </div>
+
+            <div class="footer-col">
+                <h3>Newsletter</h3>
+                <p>Subscribe to our newsletter for exclusive offers, events, and coffee tips.</p>
+                <form class="newsletter-form" id="newsletterForm">
+                    <label for="newsletter-email" class="sr-only">Your Email</label>
+                    <input type="email" id="newsletter-email" placeholder="Your Email" class="form-control" required autocomplete="email">
+                    <button type="submit" class="submit-btn" style="margin-top: 10px;">Subscribe</button>
+                    <div id="newsletter-feedback" class="form-feedback" aria-live="polite"></div>
+                </form>
+            </div>
+        </div>
+
+        <div class="footer-bottom">
+            <p>© <span id="current-year"></span> Duo Brew. All Rights Reserved. | Designed with <i class="fas fa-heart" style="color: var(--accent);"></i> by Sistegram</p>
+        </div>
+
+        <a href="#home" class="back-to-top" aria-label="Back to top">
+            <i class="fas fa-arrow-up"></i>
+        </a>
+    </footer>
+
+    <!-- Special Offers Badge -->
+    <div class="special-offers">
+        <button class="offer-badge pulse" id="offer-badge-button" aria-haspopup="dialog">
+            <i class="fas fa-gift"></i>
+            <span>Special Offers!</span>
+        </button>
+    </div>
+
+    <!-- Special Offers Modal -->
+    <div class="modal" id="offers-modal" role="dialog" aria-modal="true" aria-labelledby="modal-title" aria-hidden="true">
+        <div class="modal-content">
+            <button class="close-modal" aria-label="Close special offers modal">×</button>
+            <h2 id="modal-title">Special Offers</h2>
+            <p>As a thank you to our loyal customers, enjoy these special offers:</p>
+            <ul style="margin: 20px 0; padding-left: 20px;">
+                <li style="margin-bottom: 10px;">Buy 5 drinks, get the 6th free with our loyalty program</li>
+                <li style="margin-bottom: 10px;">Happy Hour: 2-4 PM daily with 15% off all drinks</li>
+            </ul>
+            <p>Follow us on social media for weekly specials and events!</p>
+        </div>
+    </div>
+
+    <!-- External JavaScript -->
+    <script src="script.js" defer></script>
+</body>
+</html>
